@@ -15,7 +15,7 @@
     --bg-color: #000000;
     --second-bg-color: #000000;
     --text-color: #fff;
-    --main-color: #9D00FF;
+    --main-color: #FF0000;
 }
 
 /* HTML and Body */
@@ -86,14 +86,19 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh; /* Ensure it takes up the full viewport height */
+    /* background-color: #f0f0f0; Optional: Add a background color */
 }
 
 .home-img img {
     width: 20vw;
+    border-radius: 50%; /* Make the image a circle */
+    margin-left: 2vw; /* Adjust this value to move the image slightly to the right */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
     animation: floatingImage 4s ease-in-out infinite;
 }
 
-@keyframe floatImage {
+@keyframes floatingImage {
     0% {
         transform: translateY(0);
     }
@@ -104,6 +109,8 @@ section {
         transform: translateY(0);
     }
 }
+
+
 
 .home-content h3 {
     font-size: 3.2rem;
@@ -180,6 +187,7 @@ span {
 
 .about-img img {
     width: 20vw;
+    border-radius: 100%;
 }
 
 .heading {
